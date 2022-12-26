@@ -54,13 +54,37 @@ The system on which this project was executed:
 ### Part 1.1 - Setting Up Your Environment
 > For 42 Machines
 
-CD into your sgoinfre folder<br>
+1. CD into your sgoinfre folder<br>
 	`cd sgoinfre`
 
-Create a folder named after you student login followed by the number 42<br>
-	`mkdir <your user login42>`
- 
+2. Create a folder named after you student intra login followed by the number 42<br>
+	`mkdir <your intra login42>`
+
+ 3. Change authorization on the directory you just created
+	 `chmod 777 <your intra login42`
+
+4. Move the Debian .iso file you downloaded from downloads folder to the folder you just created.
+
 ## Part 2 - Installing Your VM
+
+1. Start `VirtualBox
+2. Click on `New`
+3. Give you new machine's name your intra login followed by the number 42
+4. Change your machine's location to the folder you created, located in sgoinfre
+5. Select `Linux` as your machine type
+6. Your machine version should be `Oracle (64)`
+7. Click `Continue`
+8. Make sure to have `1024` for Memory Size then click `Next`
+9. In the Hard Disk section, select `Create a virtual hard disk now` and click `Create`
+10. In the Hard Disk file type select `VDI` then click `Next`
+11. In the Storage Section select `Dynamically allocated` followed by `Next`
+12. Set the size of your storage to `12.00 GB` followed by `Continue`
+13. Your machine should now appear in the `Tools` section of the `VirtualBox` software
+14. Select your machine and click on `Settings`
+15. Select the `Storage` section to view your VM Storage
+16.  In the `Storage Devices` section, select the `Empty` field under `Controller: IDE`
+17. Then, click on the blue CD on the far right of the `Optical Drive` section and select this `.iso` file you downloaded from the Debian website, then click `OK` (you should see the `Empty` field change to the name of the file you selected)
+18. Now you can start you VM by clicking on the `Start` (green arrow)
 
 ## Part 3 - Starting Your VM
 
