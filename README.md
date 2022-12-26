@@ -175,9 +175,9 @@ The system on which this project was executed:
 
 Repeat steps 65 through 69 for all your `LVM` but make sure to select the correct `Mount point` directory for each of them.
 
-> NOTE: 
-> Make sure to select `swap area` for the `use as:` option
-> For the `var--log` LVM, select `Ext4 journaling file system` and as its `Mount point option` select `enter manually` and enter: `/var/log`
+> NOTE: <br>
+> Make sure to select `swap area` for the `use as:` option<br>
+> For the `var--log` LVM, select `Ext4 journaling file system` and <br>as its `Mount point option` select `enter manually` and enter: `/var/log`
 
 
 ## Part 4 - Configuration of Your VM - Part 1
