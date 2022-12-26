@@ -24,8 +24,8 @@ You will create your first machine in `VirtualBox` under specific instructions. 
 
 ## Recommended Methodology
 
-The main goal of this guide is for it to serve as a starting point for you to conduct an indepth research in regards to each step presented.
-If you intend to follow this guide, I highly recommend the following methodology in order for you to get the most out of it.
+The main goal of this guide is for it to serve as a starting point for you to conduct an indepth research in regards to each step presented.<br>
+If you intend to follow this guide, I highly recommend the following methodology in order for you to get the most out of it.<br>
 For every part of this guide, you will be introduced to specific commands.
 
 	1. Google the command and read the documentation for each one. The idea is to get   a general understanding of what the command does.
