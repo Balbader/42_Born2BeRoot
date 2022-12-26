@@ -11,6 +11,7 @@ You will create your first machine in `VirtualBox` under specific instructions. 
 - [Why?](#why)
 - [Recommended Methodology](#Recommended-Methodology)
 - [System](#System)
+- [Setting Up Your Environment](#Setting-Up-Your-Environment)
 - [Part 1 - Downloading Your VM](#Part-1---Downloading-Your-VM)
 - [Part 2 - Installing Your VM](#Part-2---Installing-Your-VM)
 - [Part 3 - Starting Your VM](#Part-3---Starting-Your-VM)
@@ -46,6 +47,14 @@ The system on which this project was executed:
 	CPU: Intel i5-3470S (4) @ 3.600GHz
 	Memory: 3173MiB / 7888MiB
 
+## Setting Up Your Environment
+	For 42 Machines
+
+CD into your sgoinfre folder
+	`cd sgoinfre`
+
+Create a folder named after you student login followed by the number 42
+	`mkdir <your user login42>`
 
 ## Part 1 - Downloading Your VM
 
