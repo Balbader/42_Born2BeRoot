@@ -125,6 +125,7 @@ The system on which this project was executed:
 29. Then, select `Done setting up the partition` to finish the partitioning process of the first disk
 
 ### 3.3 - Configure encrypted volumes
+
 30. Select `Configure  encrypted volumes` in the Partition Disks main menu
 31. Select `Yes` to the `Write the changes to disk and configure encrypted volumes?`
 32. Select `Create encypted volumes`
@@ -132,7 +133,53 @@ The system on which this project was executed:
 34. On the `Partition settings` select `Done setting up the partition`
 35. Then select `Finish`
 36. Then select `Yes` to `Really erase the data on SCSI! (0,0,0), partition #5 (sda)?`
-37. 
+37. Enter a password and confirm the password
+
+### 3.4 - Configure the Logical Volume Manager
+
+38.  In the Partition Disks main menu, select the `Configure the Logical Volume Manager` option
+39. Then select `Yes` to `Write the changes to disk and configure LVM`
+40. In the `LVM configuration action` select the `Create volume group` option
+41. Give it `LVMGroup` as a name
+42. Unsing your spacebar, select the `/dev/mapper/sda5_crypt` option
+43. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+44. Name it as `root`
+45. and give it a total space of `2G`
+46. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+47. Name it as `swap`
+48. and give it a total space of `1024M`
+49. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+50. Name it as `home`
+51. and give it a total space of `1G`
+52. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+53. Name it as `var`
+54. and give it a total space of `1G`
+55. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+56. Name it as `srv`
+57. and give it a total space of `1G`
+58. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+59. Name it as `tmp`
+60. and give it a total space of `1G`
+61. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+62. Name it as `var--log`
+63. and give it a total space of `1024M`
+64. Then select `Finish`
+
+### 3.5 - Mounting your LVM's
+
+65. Select `#1` under the `LV home` line
+66. In the `Partition settings` select the `Use as: do not use` option`
+67. In the `How to use this partition` menu, select the `Ext4 journaling file system` option
+68. Then select `Mount point` option and select the `/home` directory
+69. Then select `Done setting up the partition`
+
+Repeat steps 65 through 69 for all your `LVM` but make sure to select the correct `Mount point` directory for each of them.
+
+> NOTE: 
+> Make sure to select `swap area` for the `use as:` option
+> For the `var--log` LVM, select `Ext4 journaling file system` and as its `Mount point option` select `enter manually` and enter: `/var/log`
+
+
 ## Part 4 - Configuration of Your VM - Part 1
 
 ## Part 5 - SSH Connection
