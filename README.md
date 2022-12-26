@@ -179,7 +179,7 @@ Repeat steps 65 through 69 for all your `LVM` but make sure to select the correc
 > Make sure to select `swap area` for the `use as:` option<br>
 > For the `var--log` LVM, select `Ext4 journaling file system` and <br>as its `Mount point option` select `enter manually` and enter: `/var/log`
 
-### 3.6 - Finishing the Patitioning pro
+### 3.6 - Finishing the Patitioning process
 
 70. Select `Finish partitioning and write changes to disks`
 71. Select `Yes` to `Write the changes to disks?`
