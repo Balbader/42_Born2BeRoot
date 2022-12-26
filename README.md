@@ -9,7 +9,7 @@ You will create your first machine in `VirtualBox` under specific instructions. 
 ## Contents
 
 - [Why?](#why)
-- [Recommended Methodology](#recommended-methodology)
+- [Recommended Methodology](#Recommended-Methodology)
 - [Part 1 - Downloading Your VM](#part-1-downloading-your-vm)
 - [Part 2 - Installing Your VM](#Part 2 - Installing Your VM)
 - [Part 3 - Starting Your VM](#Part 3 - Starting Your VM)
