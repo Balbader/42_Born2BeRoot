@@ -161,7 +161,7 @@ The system on which this project was executed:
 59. Name it as `tmp`
 60. and give it a total space of `1G`
 61. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-62. Name it as `var--log`
+62. Name it as `var-log`
 63. and give it a total space of `1024M`
 64. Then select `Finish`
 
@@ -178,6 +178,20 @@ Repeat steps 65 through 69 for all your `LVM` but make sure to select the correc
 > NOTE: <br>
 > Make sure to select `swap area` for the `use as:` option<br>
 > For the `var--log` LVM, select `Ext4 journaling file system` and <br>as its `Mount point option` select `enter manually` and enter: `/var/log`
+
+### 3.6 - Finishing the Patitioning pro
+
+70. Select `Finish partitioning and write changes to disks`
+71. Select `Yes` to `Write the changes to disks?`
+72. Select `No` for `Scanextra installation media ?`
+73. Select your country
+74. Select `deb.debian.org` in the Debian archive mirror menu
+75. Leave the `proxy information` blanc
+76. Select `No` for `participating in the survey`
+77. In the `Choose software to install` , make sure to unselect `SSH server` and `Standard system utilities` then click `Continue`
+78. Select `Yes` for `Install the GRUB boot loader to your primary drive ?`
+79. Select the `/dev/sda` option and click `Continue`
+80. Select `Continue` for `Installation complete`
 
 
 ## Part 4 - Configuration of Your VM - Part 1
