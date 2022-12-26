@@ -78,7 +78,7 @@ The system on which this project was executed:
 9. In the Hard Disk section, select `Create a virtual hard disk now` and click `Create`
 10. In the Hard Disk file type select `VDI` then click `Next`
 11. In the Storage Section select `Dynamically allocated` followed by `Next`
-12. Set the size of your storage to `12.00 GB` followed by `Continue`
+12. Set the size of your storage to `32.00 GB` followed by `Continue`
 13. Your machine should now appear in the `Tools` section of the `VirtualBox` software
 14. Select your machine and click on `Settings`
 15. Select the `Storage` section to view your VM Storage
@@ -144,26 +144,26 @@ The system on which this project was executed:
 42. Unsing your spacebar, select the `/dev/mapper/sda5_crypt` option
 43. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
 44. Name it as `root`
-45. and give it a total space of `2G`
+45. and give it a total space of `10G`
 46. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
 47. Name it as `swap`
-48. and give it a total space of `1024M`
+48. and give it a total space of `2.3G`
 49. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
 50. Name it as `home`
-51. and give it a total space of `1G`
+51. and give it a total space of `5G`
 52. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
 53. Name it as `var`
-54. and give it a total space of `1G`
-55. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-56. Name it as `srv`
-57. and give it a total space of `1G`
-58. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-59. Name it as `tmp`
-60. and give it a total space of `1G`
-61. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-62. Name it as `var-log`
-63. and give it a total space of `1024M`
-64. Then select `Finish`
+	1. and give it a total space of `3G`
+54. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+55. Name it as `srv`
+56. and give it a total space of `3G`
+57. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+58. Name it as `tmp`
+59. and give it a total space of `3G`
+60. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+61. Name it as `var-log`
+62. and give it a total space of `4G`
+63. Then select `Finish`
 
 ### 3.5 - Mounting your LVM's
 
