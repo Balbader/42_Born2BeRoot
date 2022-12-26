@@ -48,12 +48,12 @@ The system on which this project was executed:
 	Memory: 3173MiB / 7888MiB
 
 ## Setting Up Your Environment
-	For 42 Machines
+> For 42 Machines
 
-CD into your sgoinfre folder
+CD into your sgoinfre folder<br>
 	`cd sgoinfre`
 
-Create a folder named after you student login followed by the number 42
+Create a folder named after you student login followed by the number 42<br>
 	`mkdir <your user login42>`
 
 ## Part 1 - Downloading Your VM
