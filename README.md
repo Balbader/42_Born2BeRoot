@@ -8,7 +8,7 @@ You will create your first machine in `VirtualBox` under specific instructions. 
 
 ## Contents
 
-- [Why ?] (#Why)
+- [Why ?] (/readme.md/Why)
 - [Recommended Methodology] (#Recommended Methodology)
 - [Part 1 - Downloading Your VM]  (#Part 1 - Downloading Your VM)
 - [Part 2 - Installing Your VM] (#Part 2 - Installing Your VM)
