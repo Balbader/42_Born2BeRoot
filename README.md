@@ -49,7 +49,7 @@ The system on which this project was executed:
 
 ## Part 1 - Downloading Your VM
 
-1.  Go to the official Debian website and download the following `.iso` file: [LInk to .iso file](#https://www.debian.org/download)
+1.  Go to the official Debian website and download the following `.iso` file: [LInk to .iso file](https://www.debian.org/download)
 
 ## Part 2 - Installing Your VM
 
