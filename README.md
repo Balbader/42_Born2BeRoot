@@ -190,9 +190,35 @@ Repeat steps 65 through 69 for all your `LVM` but make sure to select the correc
 75. Select `Yes` for `Install the GRUB boot loader to your primary drive ?`
 76. Select the `/dev/sda` option and click `Continue`
 77. Select `Continue` for `Installation complete`
-
+78. Once you VM has restarted, and you are in `/home/hostname` directory, type `lsblk` and compare your partitions with the ones in the bonus part of the subject.
 
 ## Part 4 - Configuration of Your VM - Part 1
+
+### 4.1 - Installing `sudo`
+
+1. In order to install `sudo` you need to be loged as root user. To switch to `root` type:
+		`su -` and enter your password when requested.
+2. Once in root mode:
+		`apt update -y`
+		`apt upgrade -y`
+		`apt install sudo`
+3. Verify that `sudo` was properly installed:
+		`dpkg -l | grep sudo`
+
+To check:
+-  apt vs apt-get vs aptitude
+-  sudo
+-  giving root privileges to user
+
+### 4.2 - Add user to `sudo` group
+1. Add User: `usermod -a -G sudo <user_name>`
+2. Verify user has been added to group: `getent group sudo`
+3.  Open `sudoers` file and give `root` privileges to the added user
+		`sudo visudo`
+4. Search for the `# User privilege specification` and add 
+	   `your <user_name> ALL=(ALL) ALL`
+
+		
 
 ## Part 5 - SSH Connection
 
