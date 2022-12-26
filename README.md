@@ -11,7 +11,6 @@ You will create your first machine in `VirtualBox` under specific instructions. 
 - [Why?](#why)
 - [Recommended Methodology](#Recommended-Methodology)
 - [System](#System)
-- [Setting Up Your Environment](#Setting-Up-Your-Environment)
 - [Part 1 - Downloading Your VM](#Part-1---Downloading-Your-VM)
 - [Part 2 - Installing Your VM](#Part-2---Installing-Your-VM)
 - [Part 3 - Starting Your VM](#Part-3---Starting-Your-VM)
@@ -47,7 +46,7 @@ The system on which this project was executed:
 	CPU: Intel i5-3470S (4) @ 3.600GHz
 	Memory: 3173MiB / 7888MiB
 
-## Setting Up Your Environment
+### Part 1.1 - Setting Up Your Environment
 > For 42 Machines
 
 CD into your sgoinfre folder<br>
@@ -56,10 +55,20 @@ CD into your sgoinfre folder<br>
 Create a folder named after you student login followed by the number 42<br>
 	`mkdir <your user login42>`
 
+
 ## Part 1 - Downloading Your VM
 
 1.  Go to the official Debian website and download the following `.iso` file: [https://www.debian.org/download](https://www.debian.org/download)
 
+### Part 1.1 - Setting Up Your Environment
+> For 42 Machines
+
+CD into your sgoinfre folder<br>
+	`cd sgoinfre`
+
+Create a folder named after you student login followed by the number 42<br>
+	`mkdir <your user login42>`
+ 
 ## Part 2 - Installing Your VM
 
 ## Part 3 - Starting Your VM
