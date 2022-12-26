@@ -46,15 +46,6 @@ The system on which this project was executed:
 	CPU: Intel i5-3470S (4) @ 3.600GHz
 	Memory: 3173MiB / 7888MiB
 
-### Part 1.1 - Setting Up Your Environment
-> For 42 Machines
-
-CD into your sgoinfre folder<br>
-	`cd sgoinfre`
-
-Create a folder named after you student login followed by the number 42<br>
-	`mkdir <your user login42>`
-
 
 ## Part 1 - Downloading Your VM
 
