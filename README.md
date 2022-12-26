@@ -3,9 +3,9 @@
 
 ##  Synopsis
 
-This project aims to introduce you to the wonderful world of virtualization.
-You will create your first machine in `VirtualBox` under specific instructions. Then at the end of this profect, you will be able to set up your own operating system while implementing strict rules.
-
+This project aims to introduce you to the wonderful world of virtualization.<br>
+You will create your first machine in `VirtualBox` under specific instructions. Then at the end of this profect, you will be able to set up your own operating system while implementing strict rules.<br>
+This guide includes the `Bonus` section of the project<br>
 ## Contents
 
 - [Why?](#why)
@@ -13,7 +13,7 @@ You will create your first machine in `VirtualBox` under specific instructions. 
 - [System](#System)
 - [Part 1 - Downloading Your VM](#Part-1---Downloading-Your-VM)
 - [Part 2 - Installing Your VM](#Part-2---Installing-Your-VM)
-- [Part 3 - Starting Your VM](#Part-3---Starting-Your-VM)
+- [Part 3 - Starting Your VM and Partitionning Your Disk Manually](#Part-3---Starting-Your-VM-and-Partitionning-Your-Disk-Manually)
 - [Part 4 - Configuration of Your VM - Part 1](#Part-4---Configuration-of-Your-VM---Part-1)
 - [Part 5 - SSH Connection](#Part-5---SSH-Connection)
 - [Part 6 - Configuration of Your VM - Part 2](#Part-6---Configuration-of-Your-VM---Part-2)
@@ -86,7 +86,19 @@ The system on which this project was executed:
 17. Then, click on the blue CD on the far right of the `Optical Drive` section and select this `.iso` file you downloaded from the Debian website, then click `OK` (you should see the `Empty` field change to the name of the file you selected)
 18. Now you can start you VM by clicking on the `Start` (green arrow)
 
-## Part 3 - Starting Your VM
+## Part 3 - Starting Your VM and Partitioning Your Disk Manually
+
+1. Start you VM by clicking on the `Start` (green arrow)
+2. Select `Install`
+3. Select `English` for the language selection
+4. Select your location
+5.  Enter your Intra login ending with `42` as the `Hostname` for the system then click `Continue`
+6. Leave the Domain name empty and click `Continue`
+7. Enter a `Root password`, make sure to write it down as you will need it later
+8. Enter a `user name` , can be your intra login without `42` then click `Continue`
+9. Enter a password for the user you just created
+10. Make sure to write down the user name and password you just entered as you will need them later
+11. 
 
 ## Part 4 - Configuration of Your VM - Part 1
 
