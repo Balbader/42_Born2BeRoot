@@ -30,10 +30,10 @@ If you intend to follow this guide, I highly recommend the following methodology
 <br>
 For every part of this guide, you will be introduced to specific commands:
 
-	1. Google the command and read the documentation for each one. The idea is to get   a general understanding of what the command does. <br>
-	2. Try the command outside of the project. Open a terminal and try typing the command and see what value or information it retruns. <br>
-	3. Take notes: When reading the doc, make sure to summarize what you understood for each command. Make a short description of what the command does and how it is used.<br>
-	4. Do not move to the next step of this guide if you are not comfortable with the current one.<br>
+	1. Google the command and read the documentation for each one. The idea is to get   a general understanding of what the command does.
+	2. Try the command outside of the project. Open a terminal and try typing the command and see what value or information it retruns.
+	3. Take notes: When reading the doc, make sure to summarize what you understood for each command. Make a short description of what the command does and how it is used.
+	4. Do not move to the next step of this guide if you are not comfortable with the current one.
 
 ## System
 
@@ -48,6 +48,8 @@ The system on which this project was executed:
 
 
 ## Part 1 - Downloading Your VM
+
+1.  Go to the official Debian website and download the following `.iso` file: [LInk to .iso file](#https://www.debian.org/download)
 
 ## Part 2 - Installing Your VM
 
