@@ -11,12 +11,12 @@ You will create your first machine in `VirtualBox` under specific instructions. 
 - [Why?](#why)
 - [Recommended Methodology](#Recommended-Methodology)
 - [Part 1 - Downloading Your VM](#Part-1---Downloading-Your-VM)
-- [Part 2 - Installing Your VM](#Part 2 - Installing Your VM)
-- [Part 3 - Starting Your VM](#Part 3 - Starting Your VM)
-- [Part 4 - Configuration of Your VM - Part 1](#Part 4 - Configuration of Your VM - Part 1)
-- [Part 5 - SSH Connection](#Part 5 - SSH Connection)
-- [Part 6 - Configuration of Your VM - Part 2](#Part 6 - Configuration of Your VM - Part 2)
-- [Part 7 - Signature.txt](#Part 7 - Signature.txt)
+- [Part 2 - Installing Your VM](#Part-2---Installing-Your-VM)
+- [Part 3 - Starting Your VM](#Part-3---Starting-Your-VM)
+- [Part 4 - Configuration of Your VM - Part 1](#Part-4---Configuration-of-Your-VM---Part-1)
+- [Part 5 - SSH Connection](#Part-5---SSH-Connection)
+- [Part 6 - Configuration of Your VM - Part 2](#Part-6---Configuration-of-Your-VM---Part-2)
+- [Part 7 - Signature.txt](#Part-7---Signature.txt)
 
 ## Why?
 
