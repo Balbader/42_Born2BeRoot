@@ -98,8 +98,41 @@ The system on which this project was executed:
 8. Enter a `user name` , can be your intra login without `42` then click `Continue`
 9. Enter a password for the user you just created
 10. Make sure to write down the user name and password you just entered as you will need them later
-11. 
+11. In the `Partitioning method` select `Manual`
 
+### 3.1 - Primary Partition
+
+12. Then select the `SCSI1 (0,0,0) (sda)` option
+13. Select `Yes` for the `Create new empty partition table on this device?` section
+14. Select the `pri/log` line
+15. Select `Create a new partition` for the `How to use this free space` section
+16. For the `New partition size` enter `500M` then click `Continue`
+17. For the type select `Primary` and `Beginning` as its Location
+18. In the `Partition settings` select the `Mount point: /` option
+19. Then select the `/boot` option
+20. Then, select `Done setting up the partition` to finish the partitioning process of the first disk
+
+### 3.2 - Logical Volume
+
+21. Then select the `SCSI1 (0,0,0) (sda)` option
+22. Select `Yes` for the `Create new empty partition table on this device?` section
+23. Select the `pri/log` line
+24. Select `Create a new partition` for the `How to use this free space` section
+25. For the `New partition size` enter `max` then click `Continue`
+26. For the type select `Logical`
+27. In the `Partition settings` select the `Mount point: /` option
+28. Then select the `Do not mount it` option
+29. Then, select `Done setting up the partition` to finish the partitioning process of the first disk
+
+### 3.3 - Configure encrypted volumes
+30. Select `Configure  encrypted volumes` in the Partition Disks main menu
+31. Select `Yes` to the `Write the changes to disk and configure encrypted volumes?`
+32. Select `Create encypted volumes`
+33. In the `Devices to encrypt` window, use your spacbar to select `/dev/sda5` followd by `Continue`
+34. On the `Partition settings` select `Done setting up the partition`
+35. Then select `Finish`
+36. Then select `Yes` to `Really erase the data on SCSI! (0,0,0), partition #5 (sda)?`
+37. 
 ## Part 4 - Configuration of Your VM - Part 1
 
 ## Part 5 - SSH Connection
