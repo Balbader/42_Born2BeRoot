@@ -3,8 +3,8 @@
 
 ##  Synopsis
 
-This project aims to introduce you to the wonderful world of virtualization.<br>
-You will create your first machine in `VirtualBox` under specific instructions. Then at the end of this profect, you will be able to set up your own operating system while implementing strict rules.<br>
+This project aims to introduce you to the wonderful world of virtualization.<br><br>
+You will create your first machine in `VirtualBox` under specific instructions. Then at the end of this profect, you will be able to set up your own operating system while implementing strict rules.<br><br>
 This guide includes the `Bonus` section of the project<br>
 ## Contents
 
