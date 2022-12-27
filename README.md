@@ -230,6 +230,11 @@ To check:
 ### 4.4 - Install and configure SSH (Secure Shell Host)
 
 1. Install SSH: `sudo apt install openssh-server -y`
+2. Check SSH status: `sudo systemctl ssh status`
+3. Edit sshd config file to change Port: `sudo vim /etc/ssh/sshd_config`
+4. Replace `#Port 22` with `Port 4242`
+5. Finally, verify that the Port change was done: `sudo grep Port /etc/ssh/sshd_config`
+6. Restart SSH: `sudo service ssh restart`
 
 ## Part 5 - SSH Connection
 
