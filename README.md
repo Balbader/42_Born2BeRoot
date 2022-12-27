@@ -289,4 +289,37 @@ To check:
 - To Check:
 - `pam-quality`
 -  `minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 refect_username difok=7 enforce_for_root`
+
+### 6.2 - Setting Password Change Policy
+
+1. Edit the `login.defs` file : `sudo vim /etc/login.defs`
+2. Change the `PASS_MAX_DAYS` `PASS_MIN_DAYS` and `PASS_WARN_AGE` to `30`, `2` and `7`
+3. Once you are done, if you are on your inhouse terminal, exit your VM by typing `exit`
+4. Go back to your actuall VM and reboot the system: `sudo reboot`
+
+### 6.3 - Creating the `user42` and `evaluating` groups
+
+1. `sudo groupadd user42`
+2. `sudo groupadd evaluating`
+3. Check if groups were created successfully: `getent group user42 evaluating`
+
+- To Check:
+- `groupadd`
+- `getent`
+
+### 6.4 - Creating and assigning a user to a group
+
+1. Check the list of all users on your system: `cut -d: -f1 /etc/passwd`
+2. Create a user: `sudo adduser new_user_name`
+3. Add the user you created with your intra login to the `user42` group: `sudo usermod -a -G user42 your_intra_username`
+4. Add the `new_user_name` to the `evaluating` group: `sudo usermod -a -G evaluating new_user_name`
+5. Check if both users were correctly added to their respective groups: `getent group user42 evaluating`
+6. To check to which groups a user belongs to: `groups user_name`
+7. Finally check if the password rules established are applied to user: `sudo chage -l user_name`
+
+
+
+
+
+
 ## Part 7 - Signature.txt
