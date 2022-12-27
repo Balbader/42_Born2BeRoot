@@ -348,8 +348,8 @@ Defaults	requiretty
 
 1. Install `net-tools`, a collection of base networking utilities for linux: `sudo apt install net-tools -y`
 2. `cd` into your `bin` folder located at : `cd /usr/local/bin`
-3. Create the following file: `touch monitoring.sh`
-4. Change the access permission of the file: `chmod 777 monitoring.sh`
+3. Create the following file: `sudo touch monitoring.sh`
+4. Change the access permission of the file: `sudo chmod 777 monitoring.sh`
 
 
 
