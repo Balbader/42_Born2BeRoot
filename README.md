@@ -380,9 +380,9 @@ wall "	#Architecture: $(uname -a)
 8. Open your `sudoers` file : `sudo visudo`
 9. under `%sudo ALL=(ALL:ALL) ALL` add the following line: `your_user_name   ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh`
 10. Save and exit the file
-11. Open the `crontab` file to add the display rule for your `monitoring.sh` script: 
+11. Open the `crontab` file to add the display rule for your `monitoring.sh` script: <br>
     `sudo crontab -u root -e`
-12. At the very bottom of the file add the following: 
+12. At the very bottom of the file add the following: <br>
     `*/10 * * * * /usr/local/bin/monitoring.sh`
 
 ## Part 7 - Signature.txt
