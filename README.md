@@ -218,7 +218,10 @@ To check:
 4. Search for the `# User privilege specification` and add 
 	   `your <user_name> ALL=(ALL) ALL`
 
-		
+### 4.3 - Installing git and vim
+
+1. Install git: `apt install git -y`
+2. Install vim: `apt install vim -y`
 
 ## Part 5 - SSH Connection
 
