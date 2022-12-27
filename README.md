@@ -331,6 +331,26 @@ To check:
 5. Create the `sudo.log` file: `touch sudo.log`
 6. Finally `cd` to your `/home` directory : `cd`
 
+### 6.6 - Configuring the `sudoers` group
+
+1. Open the `sudoers` file: `sudo visudo`
+2. Underneath the 3rd `Defaults` line add the following set of rules:
+```
+Defaults	badpass_message="Password is wrong, please try again!"
+Defaults	passwd_tries=3
+Defaults	logfile="/var/log/sudo.log"
+Defaults	log_input, log_output
+Defaults	requiretty
+```
+3. Save and exit the file
+
+### 6.7 - Crontab Configuration
+
+1. Install `net-tools`, a collection of base networking utilities for linux: `sudo apt install net-tools -y`
+2. `cd` into your `bin` folder located at : `cd /usr/local/bin`
+3. Create the following file: `touch monitoring.sh`
+4. Change the access permission of the file: `chmod 777 monitoring.sh`
+
 
 
 
