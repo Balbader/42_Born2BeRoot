@@ -387,4 +387,19 @@ wall "	#Architecture: $(uname -a)
     `*/10 * * * * /usr/local/bin/monitoring.sh`
 
 ## Part 7 - Bonus
+
+### 1 - Installing `lighttpd`
+
+1. Install Lighttpd: `sudo apt install lighttpd -y`
+2. Check the installation was successful: `dpkg -l | grep lighttpd`
+3. Allow incoming connections via Port 80: ` sudo ufw allow 80`
+4. Check the rule was added: `sudo efw status numbered`
+
+### 2 - Installation and Configuration of `MariaDB`
+
+1. Install `mariadb-server` : `sudo apt instal mariadb-server -y`
+2. Check installation was successful: `dpkg -l | grep mariadb-server`
+3. 
+
+
 ## Part 8 - Signature.txt
