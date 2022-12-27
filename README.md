@@ -280,8 +280,7 @@ To check:
 
 1. Install the `pam-pwquality` library:<br> `sudo apt install libpam-pwquality -y`
 2. Edit the `common-password` file :<br> `sudo vim /etc/pam.d/common-password`
-3. Find the line:<br>
-			`password    requisite    pam_deny.so retry=3`
+3. Find the line: `password    requisite    pam_deny.so retry=3`
 4. At the end of this line, after `retry=3` add the following:<br>
 		`minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 refect_username difok=7 enforce_for_root`
 
