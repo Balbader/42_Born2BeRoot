@@ -399,7 +399,21 @@ wall "	#Architecture: $(uname -a)
 
 1. Install `mariadb-server` : `sudo apt instal mariadb-server -y`
 2. Check installation was successful: `dpkg -l | grep mariadb-server`
-3. 
+3. `MariaDB` binaries have `man` pages. In order to view them, you need to install MAN: `sudo apt install man -y`
+4. Start interactive script to remove insecure default settings:
+```
+sudo mysql_secure_installation
+Enter current password for root (enter for none): press enter
+Switch to unix_sockt authentication [Y/n] n
+Change the root password? [Y/n] n
+Remove anonymous users? [Y/n] Y
+Disallow root login remotly? [Y/n] Y
+Remove test database and access to it? [Y/n] Y
+Reload privilege tables now? [Y/n] Y
+```
+5. Log in to the MariaDB console: `sudo mariadb`
+6. Create a new db: `CREATE DATABASE <database_name>`
+
 
 
 ## Part 8 - Signature.txt
