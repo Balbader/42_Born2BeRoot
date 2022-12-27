@@ -278,7 +278,7 @@ To check:
 
 ### 6.1 - Setting Strong Password Policy
 
-1. Install the `pam-pwquality` library:<br> `sudo apt install libpam-pwquality -y`
+1. Install the `pam-pwquality` library: `sudo apt install libpam-pwquality -y`
 2. Edit the `common-password` file :<br> `sudo vim /etc/pam.d/common-password`
 3. Find the line: `password    requisite    pam_deny.so retry=3`
 4. At the end of this line, after `retry=3` add the following:<br>
