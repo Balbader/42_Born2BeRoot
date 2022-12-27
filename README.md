@@ -256,7 +256,20 @@ To check:
 ## Part 5 - SSH Connection (Secure Shell Host)
 
 1. Turn off your VM
-
+2. Open your VM settings
+3. Select the `Network` option
+4. Select `Adapter 1`
+5. Select `Abanced`
+6. Select `Port Forwarding`
+7. If no rule is visible click the green `+` button
+8. Add `4242` as a `Host Port` and as a `Guest Port`
+9. Click `OK`
+10. Start your VM
+11. Check your SSH status: `sudo systemctl ssh status`
+12. Open your inhouse terminal
+13. Connect to your VM via `ssh`: `ssh your_username@127.0.0.1 -p 4242`
+14. Enter your password when requested
+15. At this point you should be connected to you VM
 
 ## Part 6 - Configuration of Your VM - Part 2
 
