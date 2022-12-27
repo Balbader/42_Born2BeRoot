@@ -216,12 +216,20 @@ To check:
 3.  Open `sudoers` file and give `root` privileges to the added user
 		`sudo visudo`
 4. Search for the `# User privilege specification` and add 
-	   `your <user_name> ALL=(ALL) ALL`
+`your <user_name> ALL=(ALL) ALL` 
+5. exit sudo mode by typing `exit`
+
 
 ### 4.3 - Installing git and vim
 
-1. Install git: `apt install git -y`
-2. Install vim: `apt install vim -y`
+1. Install git: `sudo apt install git -y`
+2. Check git version: `git --version`
+3. Install vim: `sudo apt install vim -y`
+4. Check vim version: `vim --version`
+
+### 4.4 - Install and configure SSH (Secure Shell Host)
+
+1. Install SSH: `sudo apt install openssh-server -y`
 
 ## Part 5 - SSH Connection
 
