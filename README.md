@@ -317,6 +317,19 @@ To check:
 6. To check to which groups a user belongs to: `groups user_name`
 7. Finally check if the password rules established are applied to user: `sudo chage -l user_name`
 
+- To Check:
+-  `adduser`
+- `groups`
+- `chage`
+
+### 6.5 - Creating the `sudo.log` file
+
+1. `cd` to your `/root` directory: `cd ../../`
+2. `cd` to the `/var/log` dirctory: `cd var/log`
+3. Check if a `sudo` folder exist: `ls`
+4. If not create it and `cd` into it: `sudo mkdir sudo && cd sudo`
+5. Create the `sudo.log` file: `touch sudo.log`
+6. Finally `cd` to your `/home` directory : `cd`
 
 
 
