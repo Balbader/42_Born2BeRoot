@@ -17,7 +17,8 @@ This guide includes the `Bonus` section of the project<br>
 - [Part 4 - Configuration of Your VM - Part 1](#Part-4---Configuration-of-Your-VM---Part-1)
 - [Part 5 - SSH Connection](#Part-5---SSH-Connection)
 - [Part 6 - Configuration of Your VM - Part 2](#Part-6---Configuration-of-Your-VM---Part-2)
-- [Part 7 - Signature.txt](#Part-7---Signature.txt)
+- [Part 7 - Bonus](#Part-7---Bonus)
+- [Part 8 - Signature.txt](#Part-8---Signature.txt)
 
 ## Why?
 
@@ -385,4 +386,5 @@ wall "	#Architecture: $(uname -a)
 12. At the very bottom of the file add the following: <br>
     `*/10 * * * * /usr/local/bin/monitoring.sh`
 
-## Part 7 - Signature.txt
+## Part 7 - Bonus
+## Part 8 - Signature.txt
