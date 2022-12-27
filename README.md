@@ -35,6 +35,8 @@ For every part of this guide, you will be introduced to specific commands:
 	3. Take notes: When reading the doc, make sure to summarize what you understood for each command. Make a short description of what the command does and how it is used.
 	4. Do not move to the next step of this guide if you are not comfortable with the current one.
 
+When there is a `To Check` section, use it as a starting point for the extra research that needs to be done.<br>
+
 ## System
 
 The system on which this project was executed:
