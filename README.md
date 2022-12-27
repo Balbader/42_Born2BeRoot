@@ -271,6 +271,18 @@ To check:
 14. Enter your password when requested
 15. At this point you should be connected to you VM
 
+> NOTE:
+> At this point, if you connected successfully to your VM, you should be able to continue the following steps directly on your inhouse terminal as long as you are connected to your VM.
+
 ## Part 6 - Configuration of Your VM - Part 2
+
+### 6.1 - Setting Strong Password Policy
+
+1. Install the `pam-pwquality` library: `sudo apt install libpam-pwquality -y`
+2. Edit the `common-password` file : `sudo vim /etc/pam.d/common-password`
+3. Find the line:
+			`password    requisite    pam_deny.so retry=3`
+4. At the end of this line, after `retry=3` add the following:
+		`minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 refect_username difok=7 enforce_for_root`
 
 ## Part 7 - Signature.txt
