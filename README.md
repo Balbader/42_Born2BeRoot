@@ -284,4 +284,7 @@ To check:
 4. At the end of this line, after `retry=3` add the following:<br>
 		`minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 refect_username difok=7 enforce_for_root`
 
+- To Check:
+- `pam-quality`
+-  `minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 refect_username difok=7 enforce_for_root`
 ## Part 7 - Signature.txt
