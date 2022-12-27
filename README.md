@@ -236,7 +236,26 @@ To check:
 5. Finally, verify that the Port change was done: `sudo grep Port /etc/ssh/sshd_config`
 6. Restart SSH: `sudo service ssh restart`
 
+- To Check:
+-  `openssh-server`
+- `systemctl`
+- `service`
+
+### 4.5 - Install and configure UFW (Uncomplicated FireWall)
+
+1. Install UFW: `sudo apt install ufw -y`
+2. Enable UFW on your system: `sudo ufw enable`
+3. Check UFW status: `sudo ufw status`
+4. Allow SSH protocol : `sudo ufw allow ssh`
+5. Allow 4242 protocol: `sudo ufw allow 4242`
+6. Check UFW status and list UFW rules: `sudo ufw status numbered`
+
+- To Check:
+- `UFW`
+
 ## Part 5 - SSH Connection (Secure Shell Host)
+
+1. Turn off your VM
 
 
 ## Part 6 - Configuration of Your VM - Part 2
