@@ -227,7 +227,7 @@ To check:
 3. Install vim: `sudo apt install vim -y`
 4. Check vim version: `vim --version`
 
-### 4.4 - Install and configure SSH (Secure Shell Host)
+## Part 5 - SSH Connection (Secure Shell Host)
 
 1. Install SSH: `sudo apt install openssh-server -y`
 2. Check SSH status: `sudo systemctl ssh status`
@@ -235,8 +235,6 @@ To check:
 4. Replace `#Port 22` with `Port 4242`
 5. Finally, verify that the Port change was done: `sudo grep Port /etc/ssh/sshd_config`
 6. Restart SSH: `sudo service ssh restart`
-
-## Part 5 - SSH Connection
 
 ## Part 6 - Configuration of Your VM - Part 2
 
