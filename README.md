@@ -109,7 +109,7 @@ The system on which this project was executed:
 16. For the `New partition size` enter `500M` then click `Continue`
 17. For the type select `Primary` and `Beginning` as its Location
 18. In the `Partition settings` select the `Mount point: /` option
-19. Then select the `/boot` option
+19. Then select the `/boot` option , in the `erase data` section select `no`
 20. Then, select `Done setting up the partition` to finish the partitioning process of the first disk
 
 ### 3.2 - Logical Volume
