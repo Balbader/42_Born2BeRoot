@@ -412,7 +412,7 @@ Remove test database and access to it? [Y/n] Y
 Reload privilege tables now? [Y/n] Y
 ```
 5. Log in to the MariaDB console: `sudo mariadb`
-6. Create a new db: `CREATE DATABASE <database_name>`
+6. Create a new db: `CREATE DATABASE <database_name>;`
 
 
 
