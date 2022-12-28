@@ -52,19 +52,16 @@ The system on which this project was executed:
 
 ## Part 1 - Downloading Your VM
 
-1.  Go to the official Debian website and download the following `.iso` file: [https://www.debian.org/download](https://www.debian.org/download)
+1.  Go to the official Debian website and download the following `.iso` file:<br>[https://www.debian.org/download](https://www.debian.org/download)
 
 ### Part 1.1 - Setting Up Your Environment
 > For 42 Machines
 
-1. CD into your sgoinfre folder<br>
-	`cd sgoinfre`
+1. CD into your sgoinfre folder:<br>`cd sgoinfre`
 
-2. Create a folder named after you student intra login followed by the number 42<br>
-	`mkdir <your intra login42>`
+2. Create a folder named after you student intra login followed by the number 42:<br>`mkdir <your intra login42>`
 
- 3. Change authorization on the directory you just created
-	 `chmod 777 <your intra login42`
+ 3. Change authorization on the directory you just created:<br>`chmod 777 <your intra login42`
 
 4. Move the Debian .iso file you downloaded from downloads folder to the folder you just created.
 
