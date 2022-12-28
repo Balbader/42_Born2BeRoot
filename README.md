@@ -215,19 +215,19 @@ To check:
 
 ### 4.3 - Installing git and vim
 
-1. Install git: `sudo apt install git -y`
-2. Check git version: `git --version`
-3. Install vim: `sudo apt install vim -y`
-4. Check vim version: `vim --version`
+1. Install git:<br>`sudo apt install git -y`
+2. Check git version:<br>`git --version`
+3. Install vim:<br>`sudo apt install vim -y`
+4. Check vim version:<br>`vim --version`
 
 ### 4.4 - Install and configure SSH (Secure Shell Host)
 
-1. Install SSH: `sudo apt install openssh-server -y`
-2. Check SSH status: `sudo systemctl ssh status`
-3. Edit sshd config file to change Port: `sudo vim /etc/ssh/sshd_config`
+1. Install SSH:<br>`sudo apt install openssh-server -y`
+2. Check SSH status:<br>`sudo systemctl ssh status`
+3. Edit sshd config file to change Port:<br>`sudo vim /etc/ssh/sshd_config`
 4. Replace `#Port 22` with `Port 4242`
-5. Finally, verify that the Port change was done: `sudo grep Port /etc/ssh/sshd_config`
-6. Restart SSH: `sudo service ssh restart`
+5. Finally, verify that the Port change was done:<br>`sudo grep Port /etc/ssh/sshd_config`
+6. Restart SSH:<br>`sudo service ssh restart`
 
 - To Check:
 -  `openssh-server`
@@ -236,12 +236,12 @@ To check:
 
 ### 4.5 - Install and configure UFW (Uncomplicated FireWall)
 
-1. Install UFW: `sudo apt install ufw -y`
-2. Enable UFW on your system: `sudo ufw enable`
-3. Check UFW status: `sudo ufw status`
-4. Allow SSH protocol : `sudo ufw allow ssh`
-5. Allow 4242 protocol: `sudo ufw allow 4242`
-6. Check UFW status and list UFW rules: `sudo ufw status numbered`
+1. Install UFW:<br>`sudo apt install ufw -y`
+2. Enable UFW on your system:<br>`sudo ufw enable`
+3. Check UFW status:<br>`sudo ufw status`
+4. Allow SSH protocol :<br>`sudo ufw allow ssh`
+5. Allow 4242 protocol:<br>`sudo ufw allow 4242`
+6. Check UFW status and list UFW rules:<br>`sudo ufw status numbered`
 
 - To Check:
 - `UFW`
@@ -258,9 +258,9 @@ To check:
 8. Add `4242` as a `Host Port` and as a `Guest Port`
 9. Click `OK`
 10. Start your VM
-11. Check your SSH status: `sudo systemctl ssh status`
+11. Check your SSH status:<br>`sudo systemctl ssh status`
 12. Open your inhouse terminal
-13. Connect to your VM via `ssh`: `ssh your_username@127.0.0.1 -p 4242`
+13. Connect to your VM via `ssh`:<br>`ssh your_username@127.0.0.1 -p 4242`
 14. Enter your password when requested
 15. At this point you should be connected to you VM
 
@@ -271,11 +271,10 @@ To check:
 
 ### 6.1 - Setting Strong Password Policy
 
-1. Install the `pam-pwquality` library: `sudo apt install libpam-pwquality -y`
-2. Edit the `common-password` file : `sudo vim /etc/pam.d/common-password`
-3. Find the line: `password    requisite    pam_deny.so retry=3`
-4. At the end of this line, after `retry=3` add the following:<br>
-		`minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 refect_username difok=7 enforce_for_root`
+1. Install the `pam-pwquality` library:<br>`sudo apt install libpam-pwquality -y`
+2. Edit the `common-password` file :<br>`sudo vim /etc/pam.d/common-password`
+3. Find the line:<br>`password    requisite    pam_deny.so retry=3`
+4. At the end of this line, after `retry=3` add the following:<br>`minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 refect_username difok=7 enforce_for_root`
 
 - To Check:
 - `pam-quality`
@@ -283,16 +282,16 @@ To check:
 
 ### 6.2 - Setting Password Change Policy
 
-1. Edit the `login.defs` file : `sudo vim /etc/login.defs`
+1. Edit the `login.defs` file :<br>`sudo vim /etc/login.defs`
 2. Change the `PASS_MAX_DAYS` `PASS_MIN_DAYS` and `PASS_WARN_AGE` to `30`, `2` and `7`
 3. Once you are done, if you are on your inhouse terminal, exit your VM by typing `exit`
-4. Go back to your actuall VM and reboot the system: `sudo reboot`
+4. Go back to your actuall VM and reboot the system:<br>`sudo reboot`
 
 ### 6.3 - Creating the `user42` and `evaluating` groups
 
-1. `sudo groupadd user42`
-2. `sudo groupadd evaluating`
-3. Check if groups were created successfully: `getent group user42 evaluating`
+1. Create `user42` group:<br>`sudo groupadd user42`
+2. Create `evaluating` group:<br>`sudo groupadd evaluating`
+3. Check if groups were created successfully:<br>`getent group user42 evaluating`
 
 - To Check:
 - `groupadd`
@@ -300,13 +299,13 @@ To check:
 
 ### 6.4 - Creating and assigning a user to a group
 
-1. Check the list of all users on your system: `cut -d: -f1 /etc/passwd`
-2. Create a user: `sudo adduser new_user_name`
-3. Add the user you created with your intra login to the `user42` group: `sudo usermod -a -G user42 your_intra_username`
-4. Add the `new_user_name` to the `evaluating` group: `sudo usermod -a -G evaluating new_user_name`
-5. Check if both users were correctly added to their respective groups: `getent group user42 evaluating`
-6. To check to which groups a user belongs to: `groups user_name`
-7. Finally check if the password rules established are applied to user: `sudo chage -l user_name`
+1. Check the list of all users on your system:<br>`cut -d: -f1 /etc/passwd`
+2. Create a user:<br>`sudo adduser new_user_name`
+3. Add the user you created with your intra login to the `user42` group:<br>`sudo usermod -a -G user42 your_intra_username`
+4. Add the `new_user_name` to the `evaluating` group:<br>`sudo usermod -a -G evaluating new_user_name`
+5. Check if both users were correctly added to their respective groups:<br>`getent group user42 evaluating`
+6. To check to which groups a user belongs to:<br>`groups user_name`
+7. Finally check if the password rules established are applied to user:<br>`sudo chage -l user_name`
 
 - To Check:
 -  `adduser`
@@ -315,12 +314,12 @@ To check:
 
 ### 6.5 - Creating the `sudo.log` file
 
-1. `cd` to your `/root` directory: `cd ../../`
-2. `cd` to the `/var/log` dirctory: `cd var/log`
-3. Check if a `sudo` folder exist: `ls`
-4. If not create it and `cd` into it: `sudo mkdir sudo && cd sudo`
-5. Create the `sudo.log` file: `touch sudo.log`
-6. Finally `cd` to your `/home` directory : `cd`
+1. `cd` to your `/root` directory:<br>`cd ../../`
+2. `cd` to the `/var/log` dirctory:<br>`cd var/log`
+3. Check if a `sudo` folder exist:<br>`ls`
+4. If not create it and `cd` into it:<br>`sudo mkdir sudo && cd sudo`
+5. Create the `sudo.log` file:<br>`touch sudo.log`
+6. Finally `cd` to your `/home` directory by typing:<br>`cd`
 
 ### 6.6 - Configuring the `sudoers` group
 
