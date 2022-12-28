@@ -398,15 +398,20 @@ Disallow root login remotly? [Y/n] Y
 Remove test database and access to it? [Y/n] Y
 Reload privilege tables now? [Y/n] Y
 ```
-5. Log in to the MariaDB console:<br>`sudo mariadb`
-6. Create a new db:<br>`CREATE DATABASE <database_name>;`
-7. Check new DB was successfully created:<br>`SHOW DATABASES;`
-8. Create a new user:<br>`CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'password';`
-9. Check new user was successfully created:<br>`SELECT User FROM mysql.user;`
-10. Grant new user full privileges on created DB:<br>`GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;`
-11. Refresh the privileges as new ones were awarded:<br>`FLUSH PRIVILEGES;`
-12. Check new privileges were granted successfully:<br>`SHOW GRANTS FOR 'user_name'@'localhost';`
-13. 
+
+### 3 - Creation and Configuration of new DB
+
+1. Log in to the MariaDB console:<br>`sudo mariadb`
+2. Create a new db:<br>`CREATE DATABASE <database_name>;`
+3. Check new DB was successfully created:<br>`SHOW DATABASES;`
+
+### 4 - Creation of new user and privileges granting
+
+1. Create a new user:<br>`CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'password';`
+2. Check new user was successfully created:<br>`SELECT User FROM mysql.user;`
+3. Grant new user full privileges on created DB:<br>`GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;`
+4. Refresh the privileges as new ones were awarded:<br>`FLUSH PRIVILEGES;`
+5. Check new privileges were granted successfully:<br>`SHOW GRANTS FOR 'user_name'@'localhost';` 
 
 
 
