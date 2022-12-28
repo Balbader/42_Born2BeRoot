@@ -196,9 +196,9 @@ Repeat steps 65 through 69 for all your `LVM` but make sure to select the correc
 
 ### 4.1 - Installing `sudo`
 
-1. In order to install `sudo` you need to be loged as root user. To switch to `root` type:<br>`su -` and enter your password when requested.
-2. Once in root mode:<br>`apt update -y`<br>`apt upgrade -y`<br>`apt install sudo`<br>
-3. Verify that `sudo` was properly installed:<br>`dpkg -l | grep sudo`
+1. In order to install `sudo` you need to be loged as root user. To switch to `root` type `su -` and enter your password when requested.
+3. Once in root mode:<br>`apt update -y`<br>`apt upgrade -y`<br>`apt install sudo`<br>
+4. Verify that `sudo` was properly installed:<br>`dpkg -l | grep sudo`
 
 To check:
 -  apt vs apt-get vs aptitude
