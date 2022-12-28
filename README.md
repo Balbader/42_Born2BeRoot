@@ -323,7 +323,7 @@ To check:
 
 ### 6.6 - Configuring the `sudoers` group
 
-1. Open the `sudoers` file: `sudo visudo`
+1. Open the `sudoers` file:<br>`sudo visudo`
 2. Underneath the 3rd `Defaults` line add the following set of rules:
 ```
 Defaults	badpass_message="Password is wrong, please try again!"
@@ -336,10 +336,10 @@ Defaults	requiretty
 
 ### 6.7 - Crontab Configuration
 
-1. Install `net-tools`, a collection of base networking utilities for linux: `sudo apt install net-tools -y`
-2. `cd` into your `bin` folder located at : `cd /usr/local/bin`
-3. Create the following file: `sudo touch monitoring.sh`
-4. Change the access permission of the file: `sudo chmod 777 monitoring.sh`
+1. Install `net-tools`, a collection of base networking utilities for linux:<br>`sudo apt install net-tools -y`
+2. `cd` into your `bin` folder located at :<br>`cd /usr/local/bin`
+3. Create the following file:<br>`sudo touch monitoring.sh`
+4. Change the access permission of the file:<br>`sudo chmod 777 monitoring.sh`
 5. add the following to your `monitoring.sh` file:
 ```
 #!/bin/bash
@@ -367,28 +367,26 @@ wall "	#Architecture: $(uname -a)
 
 6. Save and exit `monitoring.sh`
 7. type `cd` to go back to your `/home` directory
-8. Open your `sudoers` file : `sudo visudo`
-9. under `%sudo ALL=(ALL:ALL) ALL` add the following line: `your_user_name   ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh`
+8. Open your `sudoers` file :<br>`sudo visudo`
+9. under `%sudo ALL=(ALL:ALL) ALL` add the following line:<br>`your_user_name   ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh`
 10. Save and exit the file
-11. Open the `crontab` file to add the display rule for your `monitoring.sh` script: <br>
-    `sudo crontab -u root -e`
-12. At the very bottom of the file add the following: <br>
-    `*/10 * * * * /usr/local/bin/monitoring.sh`
+11. Open the `crontab` file to add the display rule for your `monitoring.sh` script:<br>`sudo crontab -u root -e`
+12. At the very bottom of the file add the following: <br>`*/10 * * * * /usr/local/bin/monitoring.sh`
 
 ## Part 7 - Bonus
 
 ### 1 - Installing `lighttpd`
 
-1. Install Lighttpd: `sudo apt install lighttpd -y`
-2. Check the installation was successful: `dpkg -l | grep lighttpd`
-3. Allow incoming connections via Port 80: ` sudo ufw allow 80`
-4. Check the rule was added: `sudo efw status numbered`
+1. Install Lighttpd:<br>`sudo apt install lighttpd -y`
+2. Check the installation was successful:<br>`dpkg -l | grep lighttpd`
+3. Allow incoming connections via Port 80:<br>` sudo ufw allow 80`
+4. Check the rule was added:<br>`sudo efw status numbered`
 
 ### 2 - Installation and Configuration of `MariaDB`
 
-1. Install `mariadb-server` : `sudo apt instal mariadb-server -y`
-2. Check installation was successful: `dpkg -l | grep mariadb-server`
-3. `MariaDB` binaries have `man` pages. In order to view them, you need to install MAN: `sudo apt install man -y`
+1. Install `mariadb-server` :<br>`sudo apt instal mariadb-server -y`
+2. Check installation was successful:<br>`dpkg -l | grep mariadb-server`
+3. `MariaDB` binaries have `man` pages. In order to view them, you need to install MAN:<br>`sudo apt install man -y`
 4. Start interactive script to remove insecure default settings:
 ```
 sudo mysql_secure_installation
@@ -400,8 +398,8 @@ Disallow root login remotly? [Y/n] Y
 Remove test database and access to it? [Y/n] Y
 Reload privilege tables now? [Y/n] Y
 ```
-5. Log in to the MariaDB console: `sudo mysql -u root`
-6. Create a new db: `CREATE DATABASE <database_name>;`
+5. Log in to the MariaDB console:<br>`sudo mysql -u root`
+6. Create a new db:<br>`CREATE DATABASE <database_name>;`
 
 
 
