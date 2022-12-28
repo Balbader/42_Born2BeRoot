@@ -399,20 +399,32 @@ Remove test database and access to it? [Y/n] Y
 Reload privilege tables now? [Y/n] Y
 ```
 
-### 3 - Creation and Configuration of new DB
+### 2.1 - Creation and Configuration of new DB
 
 1. Log in to the MariaDB console:<br>`sudo mariadb`
 2. Create a new db:<br>`CREATE DATABASE <database_name>;`
 3. Check new DB was successfully created:<br>`SHOW DATABASES;`
 
-### 4 - Creation of new user and privileges granting
+### 2.2 - Creation of new user and privileges granting
 
 1. Create a new user:<br>`CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'password';`
 2. Check new user was successfully created:<br>`SELECT User FROM mysql.user;`
 3. Grant new user full privileges on created DB:<br>`GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;`
 4. Refresh the privileges as new ones were awarded:<br>`FLUSH PRIVILEGES;`
 5. Check new privileges were granted successfully:<br>`SHOW GRANTS FOR 'user_name'@'localhost';` 
+6. Exit MariaDB by typing:<br>`exit`
+7. Log back to MariaDB via the user you created to check if the database `user` was successfully created:<br>`mariadb -u user_name -p`
+8. Enter the passowrd for the user
+9. Confirm database `user` has access to `Database`:<br>`ShOW DATABASES;`
+10. Exit MariaDB by typing:<br>`exit`
 
+### 3 - Installing PHP
 
+1. Install `php-cgi` && `php-mysql`:<br>`sudo apt install php-cgi php-mysql`
+2. Check the installation was successful:<br>`dpkg -l | grep php`
 
+### 4 - Install and configure WordPress
+
+1. Install `wget`:<br>`sudo apt install wget`
+2. 
 ## Part 8 - Signature.txt
