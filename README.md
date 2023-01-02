@@ -102,74 +102,74 @@ The system on which this project was executed:
 
 ### 3.1 - Primary Partition
 
-12. Then select the `SCSI1 (0,0,0) (sda)` option
-13. Select `Yes` for the `Create new empty partition table on this device?` section
-14. Select the `pri/log` line
-15. Select `Create a new partition` for the `How to use this free space` section
-16. For the `New partition size` enter `500M` then click `Continue`
-17. For the type select `Primary` and `Beginning` as its Location
-18. In the `Partition settings` select the `Mount point: /` option
-19. Then select the `/boot` option , in the `erase data` section select `no` this will allow to minimize the size of the `.vdi` file and therefore, shorten the generation time of the `signature.txt` file.
-20. Then, select `Done setting up the partition` to finish the partitioning process of the first disk
+1. Then select the `SCSI1 (0,0,0) (sda)` option
+2. Select `Yes` for the `Create new empty partition table on this device?` section
+3. Select the `pri/log` line
+4. Select `Create a new partition` for the `How to use this free space` section
+5. For the `New partition size` enter `500M` then click `Continue`
+6. For the type select `Primary` and `Beginning` as its Location
+7. In the `Partition settings` select the `Mount point: /` option
+8. Then select the `/boot` option , in the `erase data` section select `no` this will allow to minimize the size of the `.vdi` file and therefore, shorten the generation time of the `signature.txt` file.
+9. Then, select `Done setting up the partition` to finish the partitioning process of the first disk
 
 ### 3.2 - Logical Volume
 
-21. Select the `pri/log` linehen 
-22. Select `Create a new partition` for the `How to use this free space` section
-23. For the `New partition size` enter `max` then click `Continue`
-24. For the type select `Logical`
-25. In the `Partition settings` select the `Mount point: /` option
-26. Then select the `Do not mount it` option
-27. Then, select `Done setting up the partition` to finish the partitioning process of the first disk
+1. Select the `pri/log` linehen 
+2. Select `Create a new partition` for the `How to use this free space` section
+3. For the `New partition size` enter `max` then click `Continue`
+4. For the type select `Logical`
+5. In the `Partition settings` select the `Mount point: /` option
+6. Then select the `Do not mount it` option
+7. Then, select `Done setting up the partition` to finish the partitioning process of the first disk
 
 ### 3.3 - Configure encrypted volumes
 
-28. Select `Configure  encrypted volumes` in the Partition Disks main menu
-29. Select `Yes` to the `Write the changes to disk and configure encrypted volumes?`
-30. Select `Create encypted volumes`
-31. In the `Devices to encrypt` window, use your spacbar to select `/dev/sda5` followd by `Continue`
-32. On the `Partition settings` select `Done setting up the partition`
-33. Then select `Finish`
-34. Then select `Yes` to `Really erase the data on SCSI! (0,0,0), partition #5 (sda)?`
-35. Enter a password and confirm the password
+1. Select `Configure  encrypted volumes` in the Partition Disks main menu
+2. Select `Yes` to the `Write the changes to disk and configure encrypted volumes?`
+3. Select `Create encypted volumes`
+4. In the `Devices to encrypt` window, use your spacbar to select `/dev/sda5` followd by `Continue`
+5. On the `Partition settings` select `Done setting up the partition`
+6. Then select `Finish`
+7. Then select `Yes` to `Really erase the data on SCSI! (0,0,0), partition #5 (sda)?`
+8. Enter a password and confirm the password
 
 ### 3.4 - Configure the Logical Volume Manager
 
-36.  In the Partition Disks main menu, select the `Configure the Logical Volume Manager` option
-37. Then select `Yes` to `Write the changes to disk and configure LVM`
-38. In the `LVM configuration action` select the `Create volume group` option
-39. Give it `LVMGroup` as a name
-40. Unsing your spacebar, select the `/dev/mapper/sda5_crypt` option
-41. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-42. Name it as `root`
-43. and give it a total space of `10G`
-44. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-45. Name it as `swap`
-46. and give it a total space of `2.3G`
-47. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-48. Name it as `home`
-49. and give it a total space of `5G`
-50. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-51. Name it as `var`
+1.  In the Partition Disks main menu, select the `Configure the Logical Volume Manager` option
+2. Then select `Yes` to `Write the changes to disk and configure LVM`
+3. In the `LVM configuration action` select the `Create volume group` option
+4. Give it `LVMGroup` as a name
+5. Unsing your spacebar, select the `/dev/mapper/sda5_crypt` option
+6. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+7. Name it as `root`
+8. and give it a total space of `10G`
+9. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+10. Name it as `swap`
+11. and give it a total space of `2.3G`
+12. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+13. Name it as `home`
+14. and give it a total space of `5G`
+15. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+16. Name it as `var`
 	1. and give it a total space of `3G`
-52. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-53. Name it as `srv`
-54. and give it a total space of `3G`
-55. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-56. Name it as `tmp`
-57. and give it a total space of `3G`
-58. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
-59. Name it as `var-log`
-60. and give it a total space of `4G`
-61. Then select `Finish`
+17. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+18. Name it as `srv`
+19. and give it a total space of `3G`
+20. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+21. Name it as `tmp`
+22. and give it a total space of `3G`
+23. Select `Create logical volume` option and select the `LVMGroup` as the location where it should be created
+24. Name it as `var-log`
+25. and give it a total space of `4G`
+26. Then select `Finish`
 
 ### 3.5 - Mounting your LVM's
 
-62. Select `#1` under the `LV home` line
-63. In the `Partition settings` select the `Use as: do not use` option`
-64. In the `How to use this partition` menu, select the `Ext4 journaling file system` option
-65. Then select `Mount point` option and select the `/home` directory
-66. Then select `Done setting up the partition`
+1. Select `#1` under the `LV home` line
+2. In the `Partition settings` select the `Use as: do not use` option`
+3. In the `How to use this partition` menu, select the `Ext4 journaling file system` option
+4. Then select `Mount point` option and select the `/home` directory
+5. Then select `Done setting up the partition`
 
 Repeat steps 65 through 69 for all your `LVM` but make sure to select the correct `Mount point` directory for each of them.
 
@@ -179,18 +179,18 @@ Repeat steps 65 through 69 for all your `LVM` but make sure to select the correc
 
 ### 3.6 - Finishing the Patitioning process
 
-67. Select `Finish partitioning and write changes to disks`
-68. Select `Yes` to `Write the changes to disks?`
-69. Select `No` for `Scanextra installation media ?`
-70. Select your country
-71. Select `deb.debian.org` in the Debian archive mirror menu
-72. Leave the `proxy information` blanc
-73. Select `No` for `participating in the survey`
-74. In the `Choose software to install` , make sure to unselect `SSH server` and `Standard system utilities` then click `Continue`
-75. Select `Yes` for `Install the GRUB boot loader to your primary drive ?`
-76. Select the `/dev/sda` option and click `Continue`
-77. Select `Continue` for `Installation complete`
-78. Once you VM has restarted, and you are in `/home/hostname` directory, type `lsblk` and compare your partitions with the ones in the bonus part of the subject.
+1. Select `Finish partitioning and write changes to disks`
+2. Select `Yes` to `Write the changes to disks?`
+3. Select `No` for `Scanextra installation media ?`
+4. Select your country
+5. Select `deb.debian.org` in the Debian archive mirror menu
+6. Leave the `proxy information` blanc
+7. Select `No` for `participating in the survey`
+8. In the `Choose software to install` , make sure to unselect `SSH server` and `Standard system utilities` then click `Continue`
+9. Select `Yes` for `Install the GRUB boot loader to your primary drive ?`
+10. Select the `/dev/sda` option and click `Continue`
+11. Select `Continue` for `Installation complete`
+12. Once you VM has restarted, and you are in `/home/hostname` directory, type `lsblk` and compare your partitions with the ones in the bonus part of the subject.
 
 ## Part 4 - Configuration of Your VM - Part 1
 
