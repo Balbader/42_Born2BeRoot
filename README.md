@@ -425,6 +425,26 @@ Reload privilege tables now? [Y/n] Y
 
 ### 4 - Install and configure WordPress
 
+### 4.1 - Installing WordPress
+
 1. Install `wget`:<br>`sudo apt install wget`
-2. 
+2. Check the installation was successful:<br>`dpkg -l | grep wget`
+3. Go to `https://wordpress.org/download/` and download the latest release `.tar.gz` file with `wget` and store the file in `~/var/www/html`:<br>`sudo wget http://wordpress.org/latest.tar.gz -P /var/www/html`<br>The `-P` will set the `/var/www/html` directory  as the the directory where all other files and subdirectories will be saved to. The default is the current directory.
+4. Go to your `html` directory and check if the `wordpress` folder was downloaded correctly. If it was downloaded in you `/home` directory, make sure to move it to the `/var/www/html` directory.
+5. Extract content from the downloaded `.tar` file:<br>`sudo tar -xzvf /var/www/html/latest.tar.gz`<br>`-xz`: filter the archive through `xz`<br>`-v`: verbosely list files processed<br>`-f`: use archive file
+6. Remove the `.tar` file:<br>`sudo rm /var/www/html/latest.tar.gz`
+7. Copy the content of `/var/www/html/wordpress` to `var/www/html`:<br>`sudo cp -r /var/www/html/wordpress/* /var/www/html`
+8. Verify the cp was sucessful and delete the `wordpress` directory:<br>`sudo rm -rf /var/www/html/wordpress`
+
+### 4.2 - Configuring WordPress
+
+1. Create a WordPress config file:<br>`sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
+2. Open the config file you just created:<br>`sudo vim /var/www/html/wp-config.php`
+3. Replace lines:<br>`23 define( 'DB_NAME', 'database_name_here');`<br>`26 define( 'DB_USER', 'username_here');`<br>`29 define( 'DB_PASSWORD', 'password_here');`<br> with:<br>`23 define( 'DB_NAME', 'your_database_name');`<br>`26 define( 'DB_USER', 'your_username');`<br>`29 define( 'DB_PASSWORD', 'your_password');`
+
+
+
+
+
+
 ## Part 8 - Signature.txt
