@@ -457,6 +457,9 @@ Reload privilege tables now? [Y/n] Y
 7. Open your `vsftpd.conf` file and add the following under `#Customization`:<br>`user_sub_token=$USER`<br>`local_root=/home/$USER/ftp
 8. Open your `vsftpd.userlist` file:<br>`sudo vim /etc/vsftpk.userlist` and add the following:<br>`userlist_enable=YES`<br>`userlist_file=/etc/vsftpk.userlist`<br>`oserlist_deny=NO`
 
+### 7 - Connect to your VM Server via `ftp`
 
+1. `ftp <ip-address>` 
+2. `ctrl + d` to terminate session.
 
 ## Part 8 - Signature.txt
