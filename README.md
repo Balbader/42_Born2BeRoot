@@ -381,6 +381,10 @@ wall "	#Architecture: $(uname -a)
 2. Check the installation was successful:<br>`dpkg -l | grep lighttpd`
 3. Allow incoming connections via Port 80:<br>` sudo ufw allow 80`
 4. Check the rule was added:<br>`sudo efw status numbered`
+5. Turn off you VM
+6. Open your vm settings
+7. Select `Network` -> `Advanced` -> `Port forwarding`
+8. Click the green `+` to add a new rule for host port `8080` to forward to guest port 80
 
 ### 2 - Installation and Configuration of `MariaDB`
 
@@ -441,6 +445,7 @@ Reload privilege tables now? [Y/n] Y
 1. Create a WordPress config file:<br>`sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
 2. Open the config file you just created:<br>`sudo vim /var/www/html/wp-config.php`
 3. Replace lines:<br>`23 define( 'DB_NAME', 'database_name_here');`<br>`26 define( 'DB_USER', 'username_here');`<br>`29 define( 'DB_PASSWORD', 'password_here');`<br> with:<br>`23 define( 'DB_NAME', 'your_database_name');`<br>`26 define( 'DB_USER', 'your_username');`<br>`29 define( 'DB_PASSWORD', 'your_password');`
+4. In your browser, go to `http://127.0.0.1:8080` and finish WordPress Setup.
 
 ### 5 - Configuring Lighttpd
 
@@ -463,3 +468,9 @@ Reload privilege tables now? [Y/n] Y
 2. `ctrl + d` to terminate session.
 
 ## Part 8 - Signature.txt
+
+1. Go to your vm folder
+2. Generate a signature id number:<br>`shasum` followed by `.vdi` file<br>`shasum Vm_file_name.vdi`
+3. Copy this output number to a signature.txt file
+
+## Copngrats ! You are done ^^
