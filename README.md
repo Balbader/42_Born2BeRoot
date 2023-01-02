@@ -427,7 +427,7 @@ Reload privilege tables now? [Y/n] Y
 1. Install `php-cgi` && `php-mysql`:<br>`sudo apt install php-cgi php-mysql`
 2. Check the installation was successful:<br>`dpkg -l | grep php`
 
-### 4 - Install and configure WordPress
+### 4 - Install and configure WordPress (Bonus Part 1)
 
 ### 4.1 - Installing WordPress
 
@@ -451,7 +451,7 @@ Reload privilege tables now? [Y/n] Y
 
 1. Enable the following modules:<br>`sudo lighty-enable-mod fastcgi`<br>`sudo lighty-enable-mod fastcgi-php`<br>`sudo service lighttpd force-reload`
 
-### 6 - File Transfer Protocol
+### 6 - File Transfer Protocol (Bonus Part 2)
 
 1. Install `FTP`:<br>`sudo apt install vsftpd -y`<br>`vsftpd` is a secure and fast FTP server for UNIX-like systemsl.
 2. Check the install was successful:<br>`dpkg -l | grep vsftpd`
