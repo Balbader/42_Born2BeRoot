@@ -448,8 +448,14 @@ Reload privilege tables now? [Y/n] Y
 
 ### 6 - File Transfer Protocol
 
-
-
+1. Install `FTP`:<br>`sudo apt install vsftpd -y`<br>`vsftpd` is a secure and fast FTP server for UNIX-like systemsl.
+2. Check the install was successful:<br>`dpkg -l | grep vsftpd`
+3. Allow with `ufw` incoming connections user `Port 21`:<br>`sudo ufw allow 21`
+4. Check ufw status:<br>`sudo ufw status numbered`
+5. Configure `vsftpd`:<br>`sudo vim /etc/vsftpd.conf`<br>in the `vsftpd.conf` file, uncomment line 31
+6. Set the root folder for the FTP-connected user to `/home/unser_name/ftp`<br>In your home/username directory create the following:<br>`sudo mkdir /home/<username>/ftp`<br>`sudo mkdir /home/<username>/ftp/files`<br>`sudo chown nobody:nogroup /home/<username>/ftp`<br>`sudo chmod a-w /home/<username>/ftp`
+7. Open your `vsftpd.conf` file and add the following under `#Customization`:<br>`user_sub_token=$USER`<br>`local_root=/home/$USER/ftp
+8. Open your `vsftpd.userlist` file:<br>`sudo vim /etc/vsftpk.userlist` and add the following:<br>`userlist_enable=YES`<br>`userlist_file=/etc/vsftpk.userlist`<br>`oserlist_deny=NO`
 
 
 
