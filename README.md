@@ -442,6 +442,12 @@ Reload privilege tables now? [Y/n] Y
 2. Open the config file you just created:<br>`sudo vim /var/www/html/wp-config.php`
 3. Replace lines:<br>`23 define( 'DB_NAME', 'database_name_here');`<br>`26 define( 'DB_USER', 'username_here');`<br>`29 define( 'DB_PASSWORD', 'password_here');`<br> with:<br>`23 define( 'DB_NAME', 'your_database_name');`<br>`26 define( 'DB_USER', 'your_username');`<br>`29 define( 'DB_PASSWORD', 'your_password');`
 
+### 5 - Configuring Lighttpd
+
+1. Enable the following modules:<br>`sudo lighty-enable-mod fastcgi`<br>`sudo lighty-enable-mod fastcgi-php`<br>`sudo service lighttpd force-reload`
+
+### 6 - File Transfer Protocol
+
 
 
 
