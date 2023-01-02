@@ -230,7 +230,7 @@ To check:
 6. Restart SSH:<br>`sudo service ssh restart`
 
 - To Check:
--  `openssh-server`
+- `openssh-server`
 - `systemctl`
 - `service`
 
