@@ -258,7 +258,7 @@ To check:
 8. Add `4242` as a `Host Port` and as a `Guest Port`
 9. Click `OK`
 10. Start your VM
-11. Check your SSH status:<br>`sudo systemctl ssh status`
+11. Check your SSH status:<br>`sudo systemctl status ssh`
 12. Open your inhouse terminal
 13. Connect to your VM via `ssh`:<br>`ssh your_username@127.0.0.1 -p 4242`
 14. Enter your password when requested
