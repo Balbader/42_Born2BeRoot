@@ -18,7 +18,7 @@ This guide includes the `Bonus` section of the project<br>
 - [Part 5 - SSH Connection](#Part-5---SSH-Connection)
 - [Part 6 - Configuration of Your VM - Part 2](#Part-6---Configuration-of-Your-VM---Part-2)
 - [Part 7 - Bonus](#Part-7---Bonus)
-- [Part 8 - Signature File](#Part-8---Signature File)
+- [Part 8 - Signature File](#Part-8---Signature-File)
 
 ## Why?
 
