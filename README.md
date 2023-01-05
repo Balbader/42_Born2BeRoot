@@ -255,7 +255,7 @@ To check:
 5. Select `Abanced`
 6. Select `Port Forwarding`
 7. If no rule is visible click the green `+` button
-8. Add `4242` as a `Host Port` and as a `Guest Port`
+8. Add `4343` as a `Host Port` and `4242` as a `Guest Port`
 9. Click `OK`
 10. Start your VM
 11. Check your SSH status:<br>`sudo systemctl status ssh`
