@@ -260,7 +260,7 @@ To check:
 10. Start your VM
 11. Check your SSH status:<br>`sudo systemctl status ssh`
 12. Open your inhouse terminal
-13. Connect to your VM via `ssh`:<br>`ssh your_username@127.0.0.1 -p 4242`
+13. Connect to your VM via `ssh`:<br>`ssh your_username@127.0.0.1 -p 4343`
 14. Enter your password when requested
 15. At this point you should be connected to you VM
 
