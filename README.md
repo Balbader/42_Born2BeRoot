@@ -380,7 +380,7 @@ wall "	#Architecture: $(uname -a)
 1. Install Lighttpd:<br>`sudo apt install lighttpd -y`
 2. Check the installation was successful:<br>`dpkg -l | grep lighttpd`
 3. Allow incoming connections via Port 80:<br>` sudo ufw allow 80`
-4. Check the rule was added:<br>`sudo efw status numbered`
+4. Check the rule was added:<br>`sudo ufw status numbered`
 5. Turn off you VM
 6. Open your vm settings
 7. Select `Network` -> `Advanced` -> `Port forwarding`
