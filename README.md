@@ -18,7 +18,7 @@ This guide includes the `Bonus` section of the project<br>
 - [Part 5 - SSH Connection](#Part-5---SSH-Connection)
 - [Part 6 - Configuration of Your VM - Part 2](#Part-6---Configuration-of-Your-VM---Part-2)
 - [Part 7 - Bonus](#Part-7---Bonus)
-- [Part 8 - Signature.txt](#Part-8---Signature.txt)
+- [Part 8 - Signature File](#Part-8---Signature File)
 
 ## Why?
 
@@ -467,10 +467,10 @@ Reload privilege tables now? [Y/n] Y
 1. `ftp <ip-address>` 
 2. `ctrl + d` to terminate session.
 
-## Part 8 - Signature.txt
+## Part 8 - Signature File
 
 1. Go to your vm folder
 2. Generate a signature id number:<br>`shasum` followed by `.vdi` file<br>`shasum Vm_file_name.vdi`
 3. Copy this output number to a signature.txt file
 
-## Copngrats ! You are done ^^
+## Congrats ! You are done ^^
