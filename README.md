@@ -388,7 +388,7 @@ wall "	#Architecture: $(uname -a)
 
 ### 2 - Installation and Configuration of `MariaDB`
 
-1. Install `mariadb-server` :<br>`sudo apt instal mariadb-server -y`
+1. Install `mariadb-server` :<br>`sudo apt install mariadb-server -y`
 2. Check installation was successful:<br>`dpkg -l | grep mariadb-server`
 3. `MariaDB` binaries have `man` pages. In order to view them, you need to install MAN:<br>`sudo apt install man -y`
 4. Start interactive script to remove insecure default settings:
