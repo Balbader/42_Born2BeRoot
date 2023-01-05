@@ -15,7 +15,7 @@ This guide includes the `Bonus` section of the project<br>
 - [Part 2 - Installing Your VM](#Part-2---Installing-Your-VM)
 - [Part 3 - Starting Your VM and Partitioning Your Disk Manually](#Part-3---Starting-Your-VM-and-Partitioning-Your-Disk-Manually)
 - [Part 4 - Configuration of Your VM - Part 1](#Part-4---Configuration-of-Your-VM---Part-1)
-- [Part 5 - SSH Connection (Secure Shell Host)](#Part-5---SSH-Connection-(Secure-Shell-Host))
+- [Part 5 - SSH Connection](#Part-5---SSH-Connection)
 - [Part 6 - Configuration of Your VM - Part 2](#Part-6---Configuration-of-Your-VM---Part-2)
 - [Part 7 - Bonus](#Part-7---Bonus)
 - [Part 8 - Signature.txt](#Part-8---Signature.txt)
@@ -246,7 +246,7 @@ To check:
 - To Check:
 - `UFW`
 
-## Part 5 - SSH Connection (Secure Shell Host)
+## Part 5 - SSH Connection
 
 1. Turn off your VM
 2. Open your VM settings
