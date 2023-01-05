@@ -424,7 +424,7 @@ Reload privilege tables now? [Y/n] Y
 
 ### 3 - Installing PHP
 
-1. Install `php-cgi` && `php-mysql`:<br>`sudo apt install php-cgi php-mysql`
+1. Install `php-cgi` && `php-mysql`:<br>`sudo apt install php-cgi php-mysql -y`
 2. Check the installation was successful:<br>`dpkg -l | grep php`
 
 ### 4 - Install and configure WordPress (Bonus Part 1)
