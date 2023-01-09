@@ -328,7 +328,7 @@ To check:
 ```
 Defaults	badpass_message="Password is wrong, please try again!"
 Defaults	passwd_tries=3
-Defaults	logfile="/var/log/sudo.log"
+Defaults	logfile="/var/log/sudo/sudo.log"
 Defaults	log_input, log_output
 Defaults	requiretty
 ```
